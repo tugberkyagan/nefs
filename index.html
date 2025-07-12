@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEFS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #1e1e1e;
+      --text-color: #e0e0e0;
+      --accent-color: #887494;
+      --subtle-gray: #2e2e2e;
+      --light-gray: #aaaaaa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
+
+    img {
+        background-color: #636363;
+        border-radius: 10px;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--subtle-gray);
+    }
+
+    header h1 {
+      font-family: 'Unbounded', cursive;
+      font-size: 3rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--light-gray);
+    }
+
+    nav {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid var(--accent-color);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 4rem auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    .about, .shows, .music {
+      margin-bottom: 4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--subtle-gray);
+      font-size: 0.9rem;
+      color: var(--light-gray);
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      opacity: 0.07;
+      width: 100px;
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      color: var(--light-gray);
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .socials a:hover {
+      color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="./karga.png" alt="Karga Simgesi" class="logo" />
+  </div>
+    
+  <header>
+    <h1>NEFS</h1>
+    <p>Grunge / Alternatif Rock – İstanbul</p>
+
+    <nav>
+      <a href="#about">Hakkımızda</a>
+      <a href="#shows">Konserler</a>
+      <a href="#music">Müzik</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <h2>Hakkımızda</h2>
+      <p>NEFS olarak 2024’te İstanbul’da yola çıktık. Grunge ve alternatif rock’tan ilham alıyor, bu sound’u Türk folk müziğinin derinlikli melodileriyle harmanlıyoruz. Şarkılarımızda ontolojik soruları, aşkı ve toplumsal meseleleri işlerken dinleyicilerimizi hem duygusal hem de düşünsel bir yolculuğa davet ediyoruz. Sahnede, yayınladığımız parçaların yanı sıra henüz paylaşmadığımız bestelerimizi ve kendi tarzımıza uyarladığımız cover’ları da seslendiriyor; dinleyiciyle doğrudan bağ kurmayı önemsiyoruz. Bağımsız ve özgün bir ses arayan herkesi konserlerimize bekliyoruz.</p>
+    </section>
+
+    <section id="shows" class="shows">
+      <h2>Yaklaşan Konserler</h2>
+      <ul>
+        <li>📍 Babylon, İstanbul – 10 Ağustos 2025</li>
+        <li>📍 IF Performance Hall Beşiktaş – 5 Eylül 2025</li>
+        <li>📍 Zorlu Studio – 27 Eylül 2025</li>
+      </ul>
+    </section>
+
+    <section id="music" class="music">
+      <h2>Dinle</h2>
+      <p>Spotify, Apple Music ve YouTube’da bizi bulabilirsin:</p>
+      <br>
+      <div class="socials">
+        <a href="https://open.spotify.com/artist/6dRNMc9lfQZOASSbuNrXiv?si=RdmHIjdTT6ywBHbQC3_saQ" target="_blank">Spotify</a>
+        <a href="https://www.youtube.com/@nefs_band" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/nefs.band/" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NEFS. Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
