@@ -14,6 +14,27 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #1e1e2f;
       color: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #2a2a44;
+      padding: 20px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      gap: 20px;
+      justify-content:center;
+    }
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #383447;
     }
     header {
       background-image: url('./img/banner/nefs-banner.png'); /* Banner fotoğrafı */
@@ -118,11 +139,19 @@
 </head>
 <body>
 
-  <header>
+  <nav>
+    <a href="#main">Ana Sayfa</a>
+    <a href="#about-us">Hakkımızda</a>
+    <a href="#photos">Fotoğraflar</a>
+    <a href="#concerts">Konserler</a>
+    <a href="#contact">İletişim</a>
+  </nav>
+
+  <header id="main">
     <a href="#concerts"><button class="concert-button">Konserler</button></a>
   </header>
   <br>
-  <section class="section">
+  <section id="about-us" class="section">
     <h2>Hakkımızda</h2>
     <div class="card-container">
       <div class="card">
@@ -140,27 +169,20 @@
         <h5>grup üyeleri</h5>
         <p>Ekip gitar ve vokalde Tuğberk Yağan, davul ve geri vokalde Güney Soysal, gitarda Ali Yasavul ve son olarak da bass gitar ve geri vokalde Mehmet Akif Ersoy'dan oluşmaktadır.</p>
       </div>
-      <div class="card">
-        <img src="./img/other/tugberk-2.jpg" alt="Short Info-3" />
-        <h5>avaz avaz</h5>
-        <p>nefs'in ikinci teklisi olarak yayına hazırlanan aşk parçasıdır.</p>
-      </div>
-      <div class="card">
-        <img src="./img/other/tugberk-ali-2.jpg" alt="Short Info-3" />
-        <h5>prodüksiyon</h5>
-        <p>nefs'in hiçbir prodüksiyon şirketi ile anlaşması bulunmamakta, tüm prodüksiyon süreçlerini grup, kendi imkanlarıyla sağlamaktadır.</p>
-      </div>
     </div>
   </section>
 <br>
-  <section class="section">
+  <section id="photos" class="section">
     <h2>Sahneden Fotoğraflar</h2>
     <div class="slider">
-      <img src="./img/other/akif-1.jpg" alt="Sahne 1" />
+      <img src="./img/other/band-2.jpg" alt="Sahne 1" />
       <img src="./img/other/ali-1.jpg" alt="Sahne 2" />
       <img src="./img/other/tugberk-4.jpg" alt="Sahne 3" />
-      <img src="./img/other/band-2.jpg" alt="Sahne 4" />
-      <img src="./img/other/tugberk-ali-1.jpg" alt="Sahne 5" />
+      <img src="./img/other/tugberk-2.jpg" alt="Sahne 4" />
+      <img src="./img/other/akif-1.jpg" alt="Sahne 5" />
+      <img src="./img/other/tugberk-akif.jpg" alt="Sahne 6" />
+      <img src="./img/other/tugberk-ali-2.jpg" alt="Sahne 7" />
+      <img src="./img/other/tugberk-ali-1.jpg" alt="Sahne 8" />
     </div>
   </section>
 <br>
@@ -174,7 +196,7 @@
     </ul>
   </section>
 <br>
-  <section class="section">
+  <section id="contact" class="section">
   <h2>Bize Ulaşın!</h2>
   <form
     class="contact-form"
