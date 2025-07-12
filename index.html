@@ -2,162 +2,201 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NEFS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nefs | Alternatif Rock / Grunge</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <style>
-    :root {
-      --bg-color: #1e1e1e;
-      --text-color: #e0e0e0;
-      --accent-color: #887494;
-      --subtle-gray: #2e2e2e;
-      --light-gray: #aaaaaa;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      padding: 0 1rem;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
+      color: #f2f2f2;
     }
-
-    img {
-        background-color: #636363;
-        border-radius: 10px;
-    }
-
     header {
-      padding: 3rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid var(--subtle-gray);
+      background-image: url('./img/banner/nefs-banner.png'); /* Banner fotoğrafı */
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      position: relative;
+      padding: 100px;
     }
-
-    header h1 {
-      font-family: 'Unbounded', cursive;
-      font-size: 3rem;
-      color: var(--accent-color);
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: var(--light-gray);
-    }
-
-    nav {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: var(--text-color);
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid transparent;
-    }
-
-    nav a:hover {
-      border-bottom: 1px solid var(--accent-color);
-    }
-
-    section {
-      max-width: 800px;
-      margin: 4rem auto;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
-    }
-
-    .about, .shows, .music {
-      margin-bottom: 4rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      border-top: 1px solid var(--subtle-gray);
-      font-size: 0.9rem;
-      color: var(--light-gray);
-    }
-
-    .logo {
+    .concert-button {
       position: absolute;
-      top: 20px;
-      left: 20px;
-      opacity: 0.07;
-      width: 100px;
+      bottom: 80px;
+      left: 760px;
+      padding: 20px 30px;
+      background-color: #595161;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.5rem;
     }
-
-    .socials a {
-      margin: 0 1rem;
-      color: var(--light-gray);
-      text-decoration: none;
-      font-size: 1.2rem;
+    .concert-button:hover {
+      background-color: #615a68;
     }
-
-    .socials a:hover {
-      color: var(--accent-color);
+    .section {
+      padding: 60px 20px;
+      max-width: 1600px;
+      margin: auto;
+    }
+    .card-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background-color: #d0d0d1;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h5 {
+      margin-top: 15px;
+    }
+    .card p {
+      padding: 15px;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 35px;
+      padding: 20px 0;
+    }
+    .slider img {
+      height: 200px;
+      border-radius: 8px;
+    }
+    .concert-list {
+      list-style: none;
+      padding: 0;
+    }
+    .concert-list li {
+      background-color: #3e3e55;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #2e2e3f;
+      color: #fff;
+    }
+    .contact-form button {
+      padding: 10px;
+      background-color: #423b49;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #564e5d;
+    }
+    footer{
+        margin: 20px;
     }
   </style>
 </head>
 <body>
-  <div>
-    <img src="./karga.png" alt="Karga Simgesi" class="logo" />
-  </div>
-    
+
   <header>
-    <h1>nefs</h1>
-    <p>Grunge / Alternatif Rock – İstanbul</p>
-
-    <nav>
-      <a href="#about">Hakkımızda</a>
-      <a href="#shows">Konserler</a>
-      <a href="#music">Müzik</a>
-    </nav>
+    <a href="#concerts"><button class="concert-button">Konserler</button></a>
   </header>
-
-  <main>
-    <section id="about" class="about">
-      <h2>Hakkımızda</h2>
-      <p>NEFS olarak 2024’te İstanbul’da yola çıktık. Grunge ve alternatif rock’tan ilham alıyor, bu sound’u Türk folk müziğinin derinlikli melodileriyle harmanlıyoruz. Şarkılarımızda ontolojik soruları, aşkı ve toplumsal meseleleri işlerken dinleyicilerimizi hem duygusal hem de düşünsel bir yolculuğa davet ediyoruz. Sahnede, yayınladığımız parçaların yanı sıra henüz paylaşmadığımız bestelerimizi ve kendi tarzımıza uyarladığımız cover’ları da seslendiriyor; dinleyiciyle doğrudan bağ kurmayı önemsiyoruz. Bağımsız ve özgün bir ses arayan herkesi konserlerimize bekliyoruz.</p>
-    </section>
-
-    <section id="shows" class="shows">
-      <h2>Yaklaşan Konserler</h2>
-      <ul>
-        <li>📍 Babylon, İstanbul – 10 Ağustos 2025</li>
-        <li>📍 IF Performance Hall Beşiktaş – 5 Eylül 2025</li>
-        <li>📍 Zorlu Studio – 27 Eylül 2025</li>
-      </ul>
-    </section>
-
-    <section id="music" class="music">
-      <h2>Dinle</h2>
-      <p>Spotify, Apple Music ve YouTube’da bizi bulabilirsin:</p>
-      <br>
-      <div class="socials">
-        <a href="https://open.spotify.com/artist/6dRNMc9lfQZOASSbuNrXiv?si=RdmHIjdTT6ywBHbQC3_saQ" target="_blank">Spotify</a>
-        <a href="https://www.youtube.com/@nefs_band" target="_blank">YouTube</a>
-        <a href="https://www.instagram.com/nefs.band/" target="_blank">Instagram</a>
+  <br>
+  <section class="section">
+    <h2>Hakkımızda</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="./img/other/band-1.jpg" alt="Short Info-1" />
+        <h5>nefs kimdir?</h5>
+        <p>nefs, Türkçe alternatif rock ve grunge kesişiminde, tamamen bağımsız şekilde kendi yolunu çizen bir grup. Ontolojik sorular, aşk ve toplumsal meseleleri harmanlayan şarkılarıyla, dinleyicisiyle buluşmanın heyecanını yaşıyor!</p>
       </div>
-    </section>
-  </main>
+      <div class="card">
+        <img src="./img/other/guitar-1.jpg" alt="Short Info-2" />
+        <h5>hayal</h5>
+        <p>Hayal nefs'in ilk teklisi ile aynı ismi taşıyan ilk stüdyo albümünün(EP) adıdır. Grup, dinleyicisiyle ilk kez 'Hayal' şarkısı ile buluştu.</p>
+      </div>
+      <div class="card">
+        <img src="./img/other/band-2.jpg" alt="Short Info-3" />
+        <h5>grup üyeleri</h5>
+        <p>Ekip gitar ve vokalde Tuğberk Yağan, davul ve geri vokalde Güney Soysal, gitarda Ali Yasavul ve son olarak da bass gitar ve geri vokalde Mehmet Akif Ersoy'dan oluşmaktadır.</p>
+      </div>
+      <div class="card">
+        <img src="./img/other/tugberk-2.jpg" alt="Short Info-3" />
+        <h5>avaz avaz</h5>
+        <p>nefs'in ikinci teklisi olarak yayına hazırlanan aşk parçasıdır.</p>
+      </div>
+      <div class="card">
+        <img src="./img/other/tugberk-ali-2.jpg" alt="Short Info-3" />
+        <h5>prodüksiyon</h5>
+        <p>nefs'in hiçbir prodüksiyon şirketi ile anlaşması bulunmamakta, tüm prodüksiyon süreçlerini grup, kendi imkanlarıyla sağlamaktadır.</p>
+      </div>
+    </div>
+  </section>
+<br>
+  <section class="section">
+    <h2>Sahneden Fotoğraflar</h2>
+    <div class="slider">
+      <img src="./img/other/akif-1.jpg" alt="Sahne 1" />
+      <img src="./img/other/ali-1.jpg" alt="Sahne 2" />
+      <img src="./img/other/tugberk-4.jpg" alt="Sahne 3" />
+      <img src="./img/other/band-2.jpg" alt="Sahne 4" />
+      <img src="./img/other/tugberk-ali-1.jpg" alt="Sahne 5" />
+    </div>
+  </section>
+<br>
+  <section id="concerts" class="section">
+    <h2>Yaklaşan Konserler</h2>
+    <ul class="concert-list">
+      <li>19 Temmuz 2025 - Kadıköy Sahne</li>
+      <li>2 Ağustos 2025 - IF Performance Hall</li>
+      <li>15 Ağustos 2025 - Bronx Pi Sahne</li>
+      <li>30 Ağustos 2025 - Zorlu Studio</li>
+    </ul>
+  </section>
+<br>
+  <section class="section">
+  <h2>Bize Ulaşın!</h2>
+  <form
+    class="contact-form"
+    action="https://formsubmit.co/nefs@nefs.band"
+    method="POST"
+  >
+    <!-- Spam önleyici gizli alan -->
+    <input type="text" name="_honey" style="display:none" />
+    <!-- Doğrudan mail gönderimi için -->
+    <input type="hidden" name="_captcha" value="false" />
+    
+    <input type="text" name="name" placeholder="Ad Soyad" required />
+    <input type="email" name="email" placeholder="Email Adresi" required />
+    <textarea name="message" rows="5" placeholder="Mesajınız..." required></textarea>
+    <button type="submit">Gönder</button>
+  </form>
+</section>
 
-  <footer>
-    <p>&copy; 2025 NEFS. Tüm hakları saklıdır.</p>
-  </footer>
+<br>
+  <footer>Telif Hakkı © 2025 nefs - Tüm Hakları Saklıdır.</footer>
+
+  <!-- Bootstrap JS + Popper (for dropdowns, modals, carousel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
