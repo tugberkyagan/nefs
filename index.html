@@ -20,6 +20,9 @@
       scroll-behavior: smooth;
     }
     nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       background-color: #2a2a44;
       padding: 7px 10px;
       position: sticky;
@@ -134,6 +137,12 @@
     }
     footer {
       margin: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .concert-button {
+        display: none;
+      }
     }
   </style>
 </head>
