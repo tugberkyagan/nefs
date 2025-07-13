@@ -7,7 +7,7 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
+
   <style>
     body {
       margin: 0;
@@ -22,14 +22,12 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      display: flex;
-      gap: 20px;
-      justify-content:center;
     }
     nav a {
       color: #f2f2f2;
       text-decoration: none;
       font-weight: bold;
+      margin-right: 20px;
       padding: 8px;
       border-radius: 5px;
     }
@@ -37,7 +35,7 @@
       background-color: #383447;
     }
     header {
-      background-image: url('./img/banner/nefs-banner.png'); /* Banner fotoğrafı */
+      background-image: url('./img/banner/nefs-banner.png');
       background-size: cover;
       background-position: center;
       height: 70vh;
@@ -47,9 +45,10 @@
     .concert-button {
       position: absolute;
       bottom: 80px;
-      left: 760px;
-      padding: 20px 30px;
-      background-color: #595161;
+      left: 35%;
+      transform: translateX(-50%);
+      padding: 15px 30px;
+      background-color: #433f46;
       color: #fff;
       border: 1px solid #fff;
       border-radius: 5px;
@@ -57,24 +56,17 @@
       font-size: 1.5rem;
     }
     .concert-button:hover {
-      background-color: #615a68;
+      background-color: #807b85;
     }
     .section {
       padding: 60px 20px;
       max-width: 1600px;
       margin: auto;
     }
-    .card-container {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
     .card {
       background-color: #d0d0d1;
       border-radius: 10px;
       overflow: hidden;
-      width: 300px;
       text-align: center;
     }
     .card img {
@@ -109,12 +101,8 @@
       padding: 15px;
       border-radius: 8px;
     }
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contact-form input, .contact-form textarea {
+    .contact-form input,
+    .contact-form textarea {
       padding: 10px;
       border-radius: 5px;
       border: none;
@@ -132,14 +120,14 @@
     .contact-form button:hover {
       background-color: #564e5d;
     }
-    footer{
-        margin: 20px;
+    footer {
+      margin: 20px;
     }
   </style>
 </head>
 <body>
 
-  <nav>
+  <nav class="d-flex justify-content-center flex-wrap">
     <a href="#main">Ana Sayfa</a>
     <a href="#about-us">Hakkımızda</a>
     <a href="#photos">Fotoğraflar</a>
@@ -150,28 +138,36 @@
   <header id="main">
     <a href="#concerts"><button class="concert-button">Konserler</button></a>
   </header>
-  <br>
+
   <section id="about-us" class="section">
-    <h2>Hakkımızda</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="./img/other/band-1.jpg" alt="Short Info-1" />
-        <h5>nefs kimdir?</h5>
-        <p>nefs, Türkçe alternatif rock ve grunge kesişiminde, tamamen bağımsız şekilde kendi yolunu çizen bir grup. Ontolojik sorular, aşk ve toplumsal meseleleri harmanlayan şarkılarıyla, dinleyicisiyle buluşmanın heyecanını yaşıyor!</p>
+  <div class="container" style="max-width: 1000px;">
+    <h2 class="mb-4 text-center">Hakkımızda</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="card text-center w-100">
+          <img src="./img/other/band-1.jpg" alt="Short Info-1" />
+          <h5>nefs kimdir?</h5>
+          <p>nefs, Türkçe alternatif rock ve grunge kesişiminde, tamamen bağımsız şekilde kendi yolunu çizen bir grup. Ontolojik sorular, aşk ve toplumsal meseleleri harmanlayan şarkılarıyla, dinleyicisiyle buluşmanın heyecanını yaşıyor!</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="./img/other/guitar-1.jpg" alt="Short Info-2" />
-        <h5>hayal</h5>
-        <p>Hayal, nefs'in ilk teklisi ile aynı ismi taşıyan ilk stüdyo albümünün(EP) adıdır. Grup, dinleyicisiyle ilk kez 'Hayal' şarkısı ile buluştu.</p>
+      <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="card text-center w-100">
+          <img src="./img/other/guitar-1.jpg" alt="Short Info-2" />
+          <h5>hayal</h5>
+          <p>Hayal, nefs'in ilk teklisi ile aynı ismi taşıyan ilk stüdyo albümünün(EP) adıdır. Grup, dinleyicisiyle ilk kez 'Hayal' şarkısı ile buluştu.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="./img/other/band-2.jpg" alt="Short Info-3" />
-        <h5>grup üyeleri</h5>
-        <p>Ekip, gitar ve vokalde Tuğberk Yağan, davul ve geri vokalde Güney Soysal, gitarda Ali Yasavul ve bass gitar ile geri vokalde Mehmet Akif Ersoy'dan oluşmaktadır.</p>
+      <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+        <div class="card text-center w-100">
+          <img src="./img/other/band-2.jpg" alt="Short Info-3" />
+          <h5>grup üyeleri</h5>
+          <p>Ekip, gitar ve vokalde Tuğberk Yağan, davul ve geri vokalde Güney Soysal, gitarda Ali Yasavul ve bass gitar ile geri vokalde Mehmet Akif Ersoy'dan oluşmaktadır.</p>
+        </div>
       </div>
     </div>
-  </section>
-<br>
+  </div>
+</section>
+
   <section id="photos" class="section">
     <h2>Sahneden Fotoğraflar</h2>
     <div class="slider">
@@ -185,7 +181,7 @@
       <img src="./img/other/tugberk-ali-1.jpg" alt="Sahne 8" />
     </div>
   </section>
-<br>
+
   <section id="concerts" class="section">
     <h2>Yaklaşan Konserler</h2>
     <ul class="concert-list">
@@ -195,30 +191,52 @@
       <li>30 Ağustos 2025 - Zorlu Studio</li>
     </ul>
   </section>
-<br>
-  <section id="contact" class="section">
-  <h2>Bize Ulaşın!</h2>
-  <form
-    class="contact-form"
-    action="https://formsubmit.co/nefs@nefs.band"
-    method="POST"
-  >
-    <!-- Spam önleyici gizli alan -->
-    <input type="text" name="_honey" style="display:none" />
-    <!-- Doğrudan mail gönderimi için -->
-    <input type="hidden" name="_captcha" value="false" />
+
+  <section class="section" id="muzik">
+    <h2 class="mb-4">🎵 İlk Şarkımız</h2>
+    <div class="card bg-dark text-white" style="max-width: 500px;">
+      <div class="card-body text-center">
+        <h5 class="card-title">nefs – “Hayal”</h5>
+        <audio controls style="width: 100%;">
+          <source src="./music/nefs-hayal.wav" type="audio/mpeg">
+          Tarayıcınız ses oynatmayı desteklemiyor.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section id="connection_links" class="section">
+    <div class="row justify-content-center">
+      <h2>Bağlantı linkleri</h2>
+      <div class="column justify-content-center">
+        <a target="_blank" href="https://open.spotify.com/artist/6dRNMc9lfQZOASSbuNrXiv?si=3tbMkh93SEi6pWOz2fyfTQ" class="m-3">Spotify</a>
+        <a target="_blank" href="https://music.apple.com/tr/artist/nefs/1802501204" class="m-3">Apple Music</a>
+        <a target="_blank" href="https://www.youtube.com/@nefs_band" class="m-3">Youtube</a>
+        <a target="_blank" href="https://www.instagram.com/nefs.band/" class="m-3">Instagram</a>
+      </div>
+    </div>
     
-    <input type="text" name="name" placeholder="Ad Soyad" required />
-    <input type="email" name="email" placeholder="Email Adresi" required />
-    <textarea name="message" rows="5" placeholder="Mesajınız..." required></textarea>
-    <button type="submit">Gönder</button>
-  </form>
-</section>
+  </section>
 
-<br>
-  <footer>Telif Hakkı © 2025 nefs - Tüm Hakları Saklıdır.</footer>
+  <section id="contact" class="section">
+    <h2 class="d-flex flex-column justify-content-between">Bize Ulaşın!</h2>
+    <form
+      class="contact-form mx-auto d-flex flex-column justify-content-between"
+      action="https://formsubmit.co/nefs@nefs.band"
+      method="POST"
+    >
+      <input type="text" name="_honey" style="display:none" class="mt-3"/>
+      <input type="hidden" name="_captcha" value="false" class="mt-3"/>
+      <input type="text" name="name" placeholder="Ad Soyad" required class="mt-3"/>
+      <input type="email" name="email" placeholder="Email Adresi" required class="mt-3"/>
+      <textarea name="message" rows="5" placeholder="Mesajınız..." required class="mt-3"></textarea>
+      <button type="submit" class="mt-3">Gönder</button>
+    </form>
+  </section>
 
-  <!-- Bootstrap JS + Popper (for dropdowns, modals, carousel) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="text-center mt-4 mb-4">Telif Hakkı © 2025 nefs - Tüm Hakları Saklıdır.</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
