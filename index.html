@@ -108,6 +108,20 @@
       padding: 15px;
       border-radius: 8px;
     }
+    .concert-list .past-concert {
+      background-color: #343449;
+      opacity: 0.65;
+    }
+    .concert-list .past-concert .badge {
+      font-size: 0.75rem;
+    }
+    .concert-list .btn-outline-light {
+      border-color: #f2f2f2;
+    }
+    .concert-list .btn-outline-light:hover {
+      background-color: #f2f2f2;
+      color: #1e1e2f;
+    }
     #connection-links a {
       color:#fff9a8;
       font-weight: bold;
@@ -205,14 +219,52 @@
   </section>
 
   <section id="concerts" class="section">
-    <h2>yaklaşan konserler</h2>
+  <div class="container" style="max-width: 1000px;">
+    <h2 class="mb-4 text-center">konserler</h2>
+
     <ul class="concert-list">
-      <li>15 Ekim 2025 - Celtic Irish Pub | Beyoğlu</li>
-      <li>23 Kasım 2025 - Celtic Irish Pub | Beyoğlu</li>
-      <li>10 Aralık 2025 - Rock'n Rolla | Kadıköy</li>
-      <li>25 Aralık 2025 - Arsen Lupen | Taksim</li>
+
+      <!-- Geçmiş konser (tamamlandı) -->
+      <li class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center past-concert">
+        <div>
+          <strong>15 Ekim 2025</strong> - Celtic Irish Pub | Beyoğlu
+        </div>
+        <span class="badge bg-success ms-2">
+            <i class="fa-solid fa-check me-1 p-1"></i>gerçekleşti
+        </span>
+      </li>
+
+      <!-- Yaklaşan konserler -->
+      <li class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <div>
+          <strong>23 Kasım 2025</strong> - Celtic Irish Pub | Beyoğlu
+        </div>
+        <a href="https://biletino.com/tr/e-179p/nefs/" target="_blank" class="btn btn-sm btn-outline-light mt-2 mt-md-0 px-4 rounded">
+          bilet al <span class="ms-2">🎟</span> 
+        </a>
+      </li>
+
+      <li class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <div>
+          <strong>10 Aralık 2025</strong> - Rock'n Rolla | Kadıköy
+        </div>
+        <a href="https://www.biletimgo.com/etkinlik/nefs-rockn-rolla-konser-20276" target="_blank" class="btn btn-sm btn-outline-light mt-2 mt-md-0 px-4 rounded">
+          bilet al <span class="ms-2">🎟</span>
+        </a>
+      </li>
+
+      <li class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+        <div>
+          <strong>25 Aralık 2025</strong> - Arsen Lupen | Taksim
+        </div>
+        <a href="https://www.biletimgo.com/etkinlik/nefs-arsen-lupen-konser-20277" target="_blank" class="btn btn-sm btn-outline-light mt-2 mt-md-0 px-4 rounded">
+          bilet al <span class="ms-2">🎟</span> 
+        </a>
+      </li>
+
     </ul>
-  </section>
+  </div>
+</section>
 
   <!-- <section class="section" id="muzik">
     <h2 class="mb-4">🎵 İlk Şarkımız</h2>
@@ -234,22 +286,22 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-auto mb-3">
         <a target="_blank" href="https://open.spotify.com/artist/6dRNMc9lfQZOASSbuNrXiv?si=3tbMkh93SEi6pWOz2fyfTQ" class="btn btn-outline-light me-2">
-          <i class="fa-brands fa-spotify me-1"></i>spotify
+          <i class="fa-brands fa-spotify me-1"></i> spotify
         </a>
       </div>
       <div class="col-12 col-md-auto mb-3">
         <a target="_blank" href="https://music.apple.com/tr/artist/nefs/1802501204" class="btn btn-outline-light me-2">
-          <i class="fa-brands fa-apple me-1"></i>apple music
+          <i class="fa-brands fa-apple me-1"></i> apple music
         </a>
       </div>
       <div class="col-12 col-md-auto mb-3">
         <a target="_blank" href="https://www.youtube.com/@nefs_band" class="btn btn-outline-light me-2">
-          <i class="fa-brands fa-youtube me-1"></i>youtube
+          <i class="fa-brands fa-youtube me-1"></i> youtube
         </a>
       </div>
       <div class="col-12 col-md-auto mb-3">
         <a target="_blank" href="https://www.instagram.com/nefs.band/" class="btn btn-outline-light">
-          <i class="fa-brands fa-square-instagram me-1"></i>instagram
+          <i class="fa-brands fa-square-instagram me-1"></i> instagram
         </a>
       </div>
     </div>
